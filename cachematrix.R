@@ -1,9 +1,21 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Using example of makeVector code, this version uses a matrix
+## This is for the R Programming Coursera Assignment #2
 
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
+        m <- NULL
+        set <- function(y) {
+            x <<- y
+            m <<- NULL
+  }
+        get <- function() x
+            setinverse <- function(inverse) m <<- inverse
+            getinverse <- function() m
+        list(set = set,
+            get = get,
+            setinverse = setinverse,
+            getinverse = getinverse)
 
 }
 
@@ -13,3 +25,4 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 }
+
