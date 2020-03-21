@@ -2,6 +2,7 @@
 ## This is for the R Programming Coursera Assignment #2
 
 ## creates function to set and get the value of the matrix and its inverse
+## pairs with the cacheSolve function
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
